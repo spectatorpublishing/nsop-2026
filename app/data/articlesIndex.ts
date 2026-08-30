@@ -4,7 +4,7 @@ import sport from "./sportsarticles";
 import spectrum from "./spectrumarticles";
 import opinion from "./opinionarticles";
 import crosswords from "./crosswords";
-import audio from "./audioarticles";
+import city from "./cityarticles";
 
 export const articlesBySection: Record<string, any[]> = {
   university: university,
@@ -13,5 +13,5 @@ export const articlesBySection: Record<string, any[]> = {
   spectrum: spectrum,
   opinion: opinion,
   crosswords: crosswords,
-  audio: audio,
+  city: city,
 };

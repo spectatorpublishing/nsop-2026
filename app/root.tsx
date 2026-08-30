@@ -35,16 +35,24 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@700&family=Inter:wght@400&display=swap",
   },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+  },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Allura&display=swap",
+  },
 ];
 
 export const meta: Route.MetaFunction = () => [
-  { title: "Commencement 2026" },
-  { name: "description", content: "Commencement 2026 Special Edition" },
-  { property: "og:title", content: "Commencement 2026 Special Edition" },
-  { property: "og:image", content: "https://commencement2026.columbiaspectator.com/background.png" },
-  { name: "twitter:card", content: "summary_large_image" },
-  { name: "twitter:title", content: "Commencement 2026 Special Edition" },
-  { name: "twitter:image", content: "https://commencement2026.columbiaspectator.com/background.png" },
+  { title: "NSOP 2026" },
+  { name: "description", content: "NSOP 2026 Special Edition" },
+  { property: "og:title", content: "NSOP 2026 Special Edition" },
+  { property: "og:image", content: "https://nsop2026.columbiaspectator.com/nsop-illo.png" },
+  { name: "twitter:card", content: "" },
+  { name: "twitter:title", content: "NSOP 2026 Special Edition" },
+  { name: "twitter:image", content: "https://nsop2026.columbiaspectator.com/nsop-illo.png" },
   { name: "twitter:site", content: "@ColumbiaSpec" },
 ];
 

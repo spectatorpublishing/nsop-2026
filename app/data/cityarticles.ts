@@ -1,4 +1,4 @@
-const audio = [
+const city = [
   {
     article_link: "https://www.columbiaspectator.com/podcasts/2026/05/06/a-collector-a-cartoonist-and-a-figure-on-the-timeline-the-life-and-legacy-of-adam-elkhadem/",
     image_url: "https://www.columbiaspectator.com/resizer/v2/NQ2OUCPNTVDZPJXGZRSCVE6VFA.jpg?auth=95aa08ef417a60417d5896ddf199571f7b6b6bb81fe77852c5e14bc782463f9c&width=800",
@@ -13,4 +13,4 @@ const audio = [
   },
 ];
 
-export default audio;
+export default city;
