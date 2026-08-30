@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router';
+import { type MouseEvent, useEffect, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router';
 
 const NAV_LINKS = [
   { label: 'Home',       path: '/' },
@@ -15,7 +15,28 @@ const NAV_LINKS = [
 
 export function Navbar({ current }: { current?: string }) {
   const location = useLocation();
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === '/' && location.hash === '#homepage-staff') {
+      requestAnimationFrame(() => {
+        document.getElementById('homepage-staff')?.scrollIntoView({ block: 'start' });
+      });
+    }
+  }, [location.pathname, location.hash]);
+
+  const handleCreditsClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    setMenuOpen(false);
+
+    if (location.pathname === '/') {
+      navigate('/#homepage-staff');
+      return;
+    }
+
+    navigate('/#homepage-staff');
+  };
 
   return (
     <nav className="nav-wrapper" style={{ paddingBottom: '1rem' }}>
@@ -38,7 +59,7 @@ export function Navbar({ current }: { current?: string }) {
           return (
             <li key={label} className="nav-item">
               {creditsLink ? (
-                <a href={path} className="nav-link" onClick={() => setMenuOpen(false)}>
+                <a href={path} className="nav-link" onClick={handleCreditsClick}>
                   {label}
                 </a>
               ) : isActive ? (
