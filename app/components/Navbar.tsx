@@ -1,14 +1,15 @@
-import { type MouseEvent, useEffect, useState } from 'react';
+import { type MouseEvent, useEffect, useRef, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 
 const NAV_LINKS = [
   { label: 'Home',       path: '/' },
   { label: 'University', path: '/articles/university' },
   { label: 'City',      path: '/articles/city' },
-  { label: 'A&C',        path: '/articles/ac' },
-  { label: 'Sports',     path: '/articles/sports' },
   { label: 'Spectrum',   path: '/articles/spectrum' },
   { label: 'Opinion',    path: '/articles/opinion' },
+  { label: 'Sports',     path: '/articles/sports' },
+  { label: 'A&C',        path: '/articles/ac' },
+  { label: 'Video',        path: '/articles/video' },
   { label: 'Crosswords', path: '/articles/crosswords' },
   { label: 'Credits',    path: '/#homepage-staff' },
 ];
@@ -17,6 +18,7 @@ export function Navbar({ current }: { current?: string }) {
   const location = useLocation();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     if (location.pathname === '/' && location.hash === '#homepage-staff') {
@@ -25,6 +27,30 @@ export function Navbar({ current }: { current?: string }) {
       });
     }
   }, [location.pathname, location.hash]);
+
+  useEffect(() => {
+    const syncNavWidth = () => {
+      const nav = navRef.current;
+      if (!nav) return;
+
+      const navWidth = Math.ceil(nav.getBoundingClientRect().width);
+      document.documentElement.style.setProperty('--nav-width', `${navWidth}px`);
+    };
+
+    syncNavWidth();
+
+    const resizeObserver = new ResizeObserver(syncNavWidth);
+    if (navRef.current) {
+      resizeObserver.observe(navRef.current);
+    }
+
+    window.addEventListener('resize', syncNavWidth);
+
+    return () => {
+      resizeObserver.disconnect();
+      window.removeEventListener('resize', syncNavWidth);
+    };
+  }, []);
 
   const handleCreditsClick = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
@@ -39,7 +65,7 @@ export function Navbar({ current }: { current?: string }) {
   };
 
   return (
-    <nav className="nav-wrapper" style={{ paddingBottom: '1rem' }}>
+    <nav ref={navRef} className="nav-wrapper" style={{ paddingBottom: '1rem' }}>
       <button
         className="nav-hamburger"
         onClick={() => setMenuOpen(o => !o)}

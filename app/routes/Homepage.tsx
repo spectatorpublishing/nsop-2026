@@ -1,4 +1,4 @@
-import NsopIllustration from "../assets/nsop-illo.png";
+import NsopIllustration from "../../public/nsop-illo.png";
 import credits from "../data/credits";
 import { EditorLetterCopy } from "../components/LetterFromEditor";
 

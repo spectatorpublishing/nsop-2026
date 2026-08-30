@@ -24,8 +24,8 @@ const spectrum = [
       article_authors: "Terrah Garner",
     },
     {
-      article_link: "",
-      image_url: "",
+      article_link: "https://www.columbiaspectator.com/spectrum/2026/08/29/10-misconceptions-about-freshman-year/",
+      image_url: "https://www.columbiaspectator.com/resizer/v2/LWNMBKJ52JHFPMWBAGFRLNSWGY.png?auth=c65db5d02b49617a1a314d0fd44ce41bcd48a0760fb17d15432e0c398a306d41&width=1200",
       article_title: "10 Misconceptions About Freshman Year",
       article_authors: "Parini Rao",
     },

@@ -5,6 +5,16 @@ const credits = {
     { name: "Melinda Yao", role: "Publisher"},
   ],
   "University News": [
+    { name: "Emily Pickering", role: "University News Editor"},
+    { name: "Spencer Davis", role: "University News Editor"},
+    { name: "Matt Luo", role: "Deputy News Editor"},
+    { name: "Celine Chien", role: "Deputy News Editor"},
+    { name: "Nadia Knoblauch", role: "Deputy News Editor"},
+    { name: "Joseph Zuloaga", role: "Deputy News Editor"},
+    { name: "Pedro Meerbaum", role: "Deputy News Editor"},
+    { name: "Tulasi Cherukuri", role: "Deputy News Editor"},
+    { name: "Ushoshi Das", role: "Senior Staff Writer"},
+    { name: "Aubrey Rogers", role: "Staff Writer"},
   ],
   "City News": [
     { name: "Katharine Lee", role: "City News Editor"},
@@ -14,6 +24,17 @@ const credits = {
     { name: "Wanyi Li", role: "Staff Writer"},
     { name: "Elliot Heath", role: "Senior Staff Writer"},
     { name: "Aissata Diallo", role: "Staff Writer"},
+  ],
+  "Spectrum": [
+    { name: "Jessica Singh", role: "Spectrum Editor" },
+    { name: "Parini Rao", role: "Spectrum Deputy Editor" },
+    { name: "Isabella O'Connor", role: "Spectrum Deputy Editor" },
+    { name: "Suhani Arora", role: "Spectrum Deputy Editor" },
+    { name: "Laura Celadon", role: "Spectrum Deputy Editor" },
+    { name: "Tegan Wang", role: "Spectrum Deputy Editor" },
+    { name: "Terrah Garner", role: "Spectrum Staff Writer" },
+    { name: "Rebecca Cisneros", role: "Spectrum Staff Writer" },
+    { name: "Bobby Goldyn", role: "Spectrum Staff Writer"},
   ],
   "Opinion": [
     { name: "Camille Duran", role: "Editorial Page Editor"},
@@ -31,6 +52,11 @@ const credits = {
     { name: "William Tang", role: "Associate Editorial Page Editor"},
   ],
   "Sports": [
+    { name: "Kaya Quebada", role: "Sports Editor" },
+    { name: "Andrew Vincenti", role: "Deputy Sports Editor" },
+    { name: "Ajay Balaje", role: "Deputy Sports Editor" },
+    { name: "Diane Lang", role: "Senior Staff Writer" },
+    { name: "Nicholas Fink", role: "Senior Staff Writer" },
   ],
   "Arts & Culture": [
     { name: "Taylor Graham", role: "Arts & Culture Editor" },
@@ -39,21 +65,12 @@ const credits = {
     { name: "Adele Zhao", role: "Deputy Arts & Culture Editor" },
     { name: "Aamina Mughal", role: "Deputy Arts & Culture Editor" },
   ],
-  "Spectrum": [
-    { name: "Jessica Singh", role: "Spectrum Editor" },
-    { name: "Parini Rao", role: "Spectrum Deputy Editor" },
-    { name: "Isabella O'Connor", role: "Spectrum Deputy Editor" },
-    { name: "Suhani Arora", role: "Spectrum Deputy Editor" },
-    { name: "Laura Celadon", role: "Spectrum Deputy Editor" },
-    { name: "Tegan Wang", role: "Spectrum Deputy Editor" },
-    { name: "Terrah Garner", role: "Spectrum Staff Writer" },
-    { name: "Rebecca Cisneros", role: "Spectrum Staff Writer" },
-    { name: "Bobby Goldyn", role: "Spectrum Staff Writer"},
+  "Video": [
+    { name: "Ashlynne Graham", role: "Video Editor" },
+    { name: "Sarah Forde", role: "Deputy Video Editor" },
   ],
   "Crosswords": [
-  ],
-  "Illustrations": [
-    { name: "Saumya Chaudhry", role: "Illustrations Editor" },
+    { name: "Anna Steel", role: "Head of Crosswords" },
   ],
   "Copy": [
     { name: "Emily Spencer", role: "Head Copy Editor"},
@@ -70,10 +87,16 @@ const credits = {
     { name: "Claire Murray", role: "Associate Copy Editor"},
     { name: "Grace Yoo", role: "Associate Copy Editor"},
   ],
+  "Illustrations": [
+    { name: "Saumya Chaudhry", role: "Illustrations Editor" },
+  ],
+  "Engagement": [
+    { name: "Arielle Rieder", role: "Director of Engagement" },
+  ],
   "Product": [
     { name: "Eugene Kim", role: "Head of Product" },
   ],
-    "Engineering": [
+  "Engineering": [
     { name: "Shriya Mani", role: "Co-Head of Engineering" },
     { name: "Julien Remy", role: "Co-Head of Engineering" },
   ],

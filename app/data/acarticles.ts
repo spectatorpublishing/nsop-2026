@@ -18,8 +18,8 @@ const artsCulture = [
       article_authors: "Aamina Mughal",
     },
     {
-      article_link: "",
-      image_url: "",
+      article_link: "https://www.columbiaspectator.com/arts-and-culture/2026/08/30/get-ready-to-break-a-leg-with-columbias-student-theater-scene/",
+      image_url: "https://www.columbiaspectator.com/resizer/v2/NTDNCBVQUVDXZKKBPYOZ2WB4A4.jpg?auth=61b367e96174a74109ff84731d4e9fbd71345d90927179daf0c628dce1aa698e&width=1200",
       article_title: "Get ready to break a leg with Columbia’s student theater scene",
       article_authors: "Gabi Fabozzi",
     },
