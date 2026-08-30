@@ -15,14 +15,12 @@ export default function Articles() {
   const { section } = useParams();
   const list =
     section && section in articlesBySection ? articlesBySection[section] : [];
-  const isCompactSection = section === "crosswords";
-
   return (
     <main>
       <ul className="articles-grid">
         {list.map((a, i) => (
           <li key={`${a.article_link}-${i}`}>
-            <ArticleCard article={a} variant={i % 6} num={list.length} compact={isCompactSection} />
+            <ArticleCard article={a} />
           </li>
         ))}
       </ul>
