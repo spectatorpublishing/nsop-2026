@@ -14,7 +14,7 @@ export default function Homepage() {
           <EditorLetterCopy />
         </div>
         <div className="homepage-illustration-link">
-          <img src={NsopIllustration} alt="Illustration celebrating the class of 2026" className="homepage-illustration" />
+          <img src={NsopIllustration} alt="Illustration for NSOP 2026" className="homepage-illustration" />
         </div>
       </section>
 
