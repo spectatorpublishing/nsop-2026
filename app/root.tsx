@@ -78,15 +78,17 @@ export default function App() {
   return (
     <>
       <div style={{ position: 'relative' }}>
-        <header className="site-header">
-          <a href="https://www.columbiaspectator.com/" target="_blank" rel="noopener noreferrer">
-            <img src={specHeader} alt="Columbia Daily Spectator" className="site-header-logo" />
-          </a>
-        </header>
-        <Navbar />
+        <div className="masthead-row">
+          <header className="site-header">
+            <a href="https://www.columbiaspectator.com/" target="_blank" rel="noopener noreferrer">
+              <img src={specHeader} alt="Columbia Daily Spectator" className="site-header-logo" />
+            </a>
+          </header>
+          <Navbar />
         </div>
-        <Outlet />
-      </>
+      </div>
+      <Outlet />
+    </>
   );
 }
 

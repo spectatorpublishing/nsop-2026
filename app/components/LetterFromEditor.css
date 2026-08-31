@@ -70,7 +70,7 @@
 
 .letter-box p {
     color: #000;
-    font-family: "Bitter", serif;
+    font-family: var(--font-bitter);
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
@@ -106,6 +106,42 @@
     margin-right: 5%;
     flex: 1;
     max-width: 750px;
+}
+
+.letter-body a {
+  color: #1359f1;
+  text-decoration: underline;
+}
+
+.spec-info-body a {
+    color: #1359f1;
+    text-decoration: underline;
+}
+
+.spec-info-section {
+    padding-bottom: 3rem;
+}
+
+.spec-info-header {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: var(--font-bitter);
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 0.2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.spec-info-body {
+    color: #000;
+    font-family: var(--font-bitter);
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
 }
 
 @media (max-width: 900px) {
@@ -166,6 +202,24 @@
 
     .letter-header img {
         width: clamp(42px, 12vw, 60px);
+    }
+
+    .letter-signoff-script {
+        font-size: 1.4rem;
+    }
+
+    .letter-signoff-role {
+        font-size: 0.95rem;
+        margin-top: 4px;
+    }
+
+    .spec-info-header {
+        font-size: 1.1rem;
+    }
+
+    .spec-info-body {
+        text-align: center;
+        font-size: 0.95rem;
     }
 
 }

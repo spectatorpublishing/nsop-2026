@@ -1,6 +1,6 @@
 import NsopIllustration from "/nsop-illo.png";
 import credits from "../data/credits";
-import { EditorLetterCopy } from "../components/LetterFromEditor";
+import { EditorLetterCopy, SpecInfoSection } from "../components/LetterFromEditor";
 
 export default function Homepage() {
   return (
@@ -16,6 +16,10 @@ export default function Homepage() {
         <div className="homepage-illustration-link">
           <img src={NsopIllustration} alt="Illustration for NSOP 2026" className="homepage-illustration" />
         </div>
+      </section>
+
+      <section className="homepage-spec-info">
+          <SpecInfoSection />
       </section>
 
       <section id="homepage-staff" className="homepage-staff" aria-labelledby="homepage-staff-title">

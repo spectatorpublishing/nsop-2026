@@ -30,8 +30,8 @@ const university = [
       article_authors: "Emily Pickering",
     },
     {
-      article_link: "",
-      image_url: "",
+      article_link: "https://www.columbiaspectator.com/photo-essays/2026/08/30/year-in-review-2025-26-in-photos/",
+      image_url: "https://www.columbiaspectator.com/resizer/v2/ZCNUHSLMXBEWHLD7VTMNX6YCHI.jpg?auth=cce7457be5e53123cd78548cb58c5a188144f9f6c9eb720d36ebefb26fa4efc9",
       article_title: "Year in Review: 2025-2026 in Photos",
       article_authors: "Audrea Chen and Pedro Meerbaum",
     },
