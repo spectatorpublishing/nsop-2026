@@ -65,9 +65,12 @@ const credits = {
     { name: "Adele Zhao", role: "Deputy Arts & Culture Editor" },
     { name: "Aamina Mughal", role: "Deputy Arts & Culture Editor" },
   ],
+  "Photo": [
+    { name: "Audrea Chen", role: "Photo Editor" },
+  ],
   "Video": [
     { name: "Ashlynne Graham", role: "Video Editor" },
-    { name: "Sarah Forde", role: "Deputy Video Editor" },
+    { name: "Sarah Forde", role: "Video Associate" },
   ],
   "Crosswords": [
     { name: "Anna Steel", role: "Head of Crosswords" },
