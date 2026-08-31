@@ -50,7 +50,7 @@ body {
   --nav-edge: clamp(88px, 8vw, 124px);
   --nav-gap: clamp(12px, 1.8vw, 28px);
   --nav-width: min(1100px, calc(100vw - 120px));
-  --content-width: calc(100vw - 18rem);
+  --content-width: calc(100vw - 13rem);
   --page-padding-x: clamp(16px, 9vw, 80px);
   --page-padding-y: clamp(23px, 6vw, 58px);
 }
@@ -346,7 +346,7 @@ body {
 .nav-link {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-size: clamp(0.875rem, 2vw, 1.3rem);
+  font-size: clamp(0.875rem, 2vw, 1.4rem);
   color: #000;
   text-decoration: none;
   white-space: nowrap;
@@ -374,7 +374,7 @@ body {
 .nav-banner-label {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-size: clamp(0.875rem, 2vw, 1.3rem);
+  font-size: clamp(0.875rem, 2vw, 1.4rem);
   color: #000;
   white-space: nowrap;
 }
