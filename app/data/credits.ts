@@ -91,7 +91,8 @@ const credits = {
     { name: "Grace Yoo", role: "Associate Copy Editor"},
   ],
   "Illustrations": [
-    { name: "Saumya Chaudhry", role: "Illustrations Editor" },
+    { name: "Eva Vu-Stern", role: "Deputy Illustrations Editor" },
+    { name: "Mila Pretolani", role: "Staff Illustrator"},
   ],
   "Engagement": [
     { name: "Arielle Rieder", role: "Director of Engagement" },
