@@ -50,7 +50,7 @@ body {
   --nav-edge: clamp(88px, 8vw, 124px);
   --nav-gap: clamp(12px, 1.8vw, 28px);
   --nav-width: min(1100px, calc(100vw - 120px));
-  --content-width: calc(100vw - 18.4rem);
+  --content-width: calc(100vw - 18rem);
   --page-padding-x: clamp(16px, 9vw, 80px);
   --page-padding-y: clamp(23px, 6vw, 58px);
 }
@@ -318,6 +318,13 @@ body {
   box-sizing: border-box;
   position: relative;
   flex-wrap: wrap;
+}
+
+@media (min-width: 601px) {
+  .nav-wrapper {
+    width: var(--content-width);
+    max-width: var(--content-width);
+  }
 }
 
 .nav-list {
