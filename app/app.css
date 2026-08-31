@@ -49,7 +49,7 @@ body {
   --nav-height: clamp(36px, 5vw, 45px);
   --nav-edge: clamp(88px, 8vw, 124px);
   --nav-gap: clamp(12px, 1.8vw, 28px);
-  --nav-width: min(1100px, calc(100vw - 64px));
+  --nav-width: min(1100px, calc(100vw - 120px));
   --page-padding-x: clamp(16px, 9vw, 80px);
   --page-padding-y: clamp(23px, 6vw, 58px);
 }
