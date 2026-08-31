@@ -1,0 +1,1 @@
+import{j as e,t}from"./jsx-runtime-CjAGqRMt.js";import{n}from"./LetterFromEditor-B1i8elRl.js";var r=t();function i(){return[{title:`Letter From the Editor`},{name:`description`,content:`A letter from the editor in chief`}]}var a=e(function(){return(0,r.jsx)(n,{})});export{a as default,i as meta};
