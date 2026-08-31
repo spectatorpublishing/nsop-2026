@@ -14,7 +14,7 @@ const NAV_LINKS = [
   { label: 'Credits',    path: '/#homepage-staff' },
 ];
 
-export function Navbar({ current }: { current?: string }) {
+export function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -55,12 +55,6 @@ export function Navbar({ current }: { current?: string }) {
   const handleCreditsClick = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
     setMenuOpen(false);
-
-    if (location.pathname === '/') {
-      navigate('/#homepage-staff');
-      return;
-    }
-
     navigate('/#homepage-staff');
   };
 
@@ -76,10 +70,7 @@ export function Navbar({ current }: { current?: string }) {
 
       <ul className={`nav-list ${menuOpen ? 'nav-list--open' : ''}`}>
         {NAV_LINKS.map(({ label, path }) => {
-          const isActive = current
-            ? current === label.toLowerCase()
-            : location.pathname === path;
-
+          const isActive = location.pathname === path;
           const creditsLink = label === 'Credits';
 
           return (

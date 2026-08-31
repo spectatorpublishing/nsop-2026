@@ -29,6 +29,12 @@ const university = [
       article_title: "Inside 99 Claremont Ave., Columbia’s new $122 million building exclusively for General Studies students",
       article_authors: "Emily Pickering",
     },
+    {
+      article_link: "",
+      image_url: "",
+      article_title: "Year in Review: 2025-2026 in Photos",
+      article_authors: "Audrea Chen and Pedro Meerbaum",
+    },
   ];
   
   export default university;
